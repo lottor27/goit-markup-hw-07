@@ -1,0 +1,19 @@
+@media screen and (min-width: 480px) {
+
+    .container{
+    min-width: 480px;
+}
+ /* width: calc((100% - 90px) / 4); */
+
+/* Feature */
+
+/* Team */
+/* Customers */
+.customers-list{
+    max-width: 600px;
+    gap: 72px;
+    column-gap: 16px;
+}
+/* Footer */
+
+}
