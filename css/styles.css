@@ -418,6 +418,8 @@ fill: #f4f4fd;
 }
 
 .feature-item-cont {
+  display: flex;
+  justify-content: center;
   margin-bottom: 8px;
 }
 .feature-text {

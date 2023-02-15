@@ -191,7 +191,9 @@
     max-width: 1110px;
 
 }
-
+.feature-item-cont{
+  display: block;
+}
 
 .feature-text{
     width: 356px;
