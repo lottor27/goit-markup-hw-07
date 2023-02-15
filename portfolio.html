@@ -14,7 +14,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/mobile.css">
     <link rel="stylesheet" href="./css/tablet.css">
@@ -29,10 +29,8 @@
             <div class="navigation-cont">
                 <nav class="navigation">
                     <ul class="list list-container">
-                        <li class="logo-items curent"><a class="logo-link" href="./
-    index.html">Studio</a></li>
-                        <li class="logo-items"><a class="logo-link" href="portfolio.
-    html">Portfolio</a></li>
+                        <li class="logo-items"><a class="logo-link" href="./index.html">Studio</a></li>
+                        <li class="logo-items curent"><a class="logo-link" href="portfolio.html">Portfolio</a></li>
                         <li class="logo-items"><a class="logo-link" href="#">Contacts</a></li>
                     </ul>
                 </nav>
@@ -41,8 +39,8 @@
                         <li class="address-items"><a class="address-link"
                                 href="mailto:info@devstudio.com">info@devstudio.com</a>
                         </li>
-                        <li class="address-items"><a class="address-link" href="tel:
-    +110001111111">+11 (000) 111-11-11</a></li>
+                        <li class="address-items"><a class="address-link" href="tel:+110001111111">+11 (000)
+                                111-11-11</a></li>
                     </ul>
                 </address>
             </div>
@@ -52,7 +50,7 @@
                 </svg>
             </button>
         </div>
-    
+
         <div class="mob-menu  is-hidden" data-menu>
             <div class="container">
                 <div>
@@ -78,12 +76,12 @@
                 <div>
                     <address class="mob-menu-address">
                         <ul class="list mob-menu-address-list">
-                            <li class="mob-menu-address-items"><a class="mob-menu-address-link-tel" href="tel:
-              +110001111111">+11 (000) 111-11-11</a></li>
+                            <li class="mob-menu-address-items"><a class="mob-menu-address-link-tel"
+                                    href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                             <li class="mob-menu-address-items"><a class="mob-menu-address-link"
                                     href="mailto:info@devstudio.com">info@devstudio.
                                     com</a></li>
-    
+
                         </ul>
                     </address>
                     <ul class="list mob-menu-social-list">
@@ -121,7 +119,8 @@
         </div>
     </header>
     <section class="portfolio">
-        <div class="container">
+        <div class="portf-cont container">
+            <div class="portf-btns">
             <h1 class="hide">Portfolio</h1>
             <ul class="list nav-buttons-cont">
                 <li><button type="button" class="all buttons-cont">All</button></li>
@@ -130,10 +129,24 @@
                 <li><button type="button" class="other-all buttons-cont">Design</button></li>
                 <li><button type="button" class="other-all buttons-cont">Marketing</button></li>
             </ul>
+            </div>
             <ul class="list hero-portfolio-cont">
                 <li class="portfolio-list-items">
                     <div class="portfolio-top-wrap">
-                        <img class="portfolio-img" src="./images/imgportf1.jpg" alt="BankAApp" width="360">
+                        <picture>
+                            <source srcset="
+                            ./images/mobile/imgportf1-mob-1x.jpg 1x, 
+                            ./images/mobile/imgportf1-mob-2x.jpg 2x" media="(max-width: 768px)">
+                            <source srcset="
+                            ./images/tablet/imgportf1-tablet-1x.jpg 1x, 
+                            ./images/tablet/imgportf1-tablet-2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="
+                            ./images/desktop/imgportf1.jpg 1x, 
+                            ./images/desktop/imgportf1-2x.jpg 2x" media="(min-width: 1200px)">
+                            <img class="portfolio-img" src="./images/mobile/imgportf1-mob-1x.jpg" alt="BankAApp"
+                                width="200">
+                        </picture>
+
                         <p class="portfolio-top-text">Loremipsum dolor
                             sit, amet consectetadipisicing elit. Porro
                             susdolores aliquam explicabo quam aut
@@ -142,65 +155,142 @@
                             Voluvoluptatibus atque.</p>
                     </div>
                     <div class="list-items-text-cont">
-                        <h2 class="text-20-500">Banking App Interface Concept</h2>
+                        <h2 class="title-portf-text">Banking App Interface Concept</h2>
                         <p class="text-port">App</p>
 
                     </div>
                 </li>
                 <li class="portfolio-list-items">
                     <div class="portfolio-top-wrap">
-                        <img class="portfolio-img" src="./images/imgportf2.jpg" alt="QRCODE" width="360">
-                        <p class="portfolio-top-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et nisi
-                            eligendi, libero quos cum quas neque illo magnam? Harum temporibus sequi corporis facilis
-                            tenetur quas magni officia commodi repellendus ullam.</p>
+                        <picture>
+                            <source srcset="
+                                ./images/mobile/imgportf2-mob-1x.jpg 1x, 
+                                ./images/mobile/imgportf2-mob-2x.jpg 2x" media="(max-width: 768px)">
+                            <source srcset="
+                                ./images/tablet/imgportf2-tablet-1x.jpg 1x, 
+                                ./images/tablet/imgportf2-tablet-2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="
+                                ./images/desktop/imgportf2.jpg 1x, 
+                                ./images/desktop/imgportf2-2x.jpg 2x" media="(min-width: 1200px)">
+                            <img class="portfolio-img" src="./images/mobile/imgportf2-mob-1x.jpg" alt="BankAApp"
+                                width="200">
+
+                            <p class="portfolio-top-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
+                                nisi
+                                eligendi, libero quos cum quas neque illo magnam? Harum temporibus sequi corporis
+                                facilis
+                                tenetur quas magni officia commodi repellendus ullam.</p>
                     </div>
                     <div class="list-items-text-cont">
-                        <h2 class="text-20-500">Cashless Payment</h2>
+                        <h2 class="title-portf-text">Cashless Payment</h2>
                         <p class="text-port">Marketing</p>
                     </div>
                 </li>
                 <li class="portfolio-list-items">
                     <div class="portfolio-top-wrap">
-                        <img class="portfolio-img" src="./images/imgportf3.jpg" alt="MeditaionApp" width="360">
-                        <p class="portfolio-top-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et nisi
-                            eligendi, libero quos cum quas neque illo magnam? Harum temporibus sequi corporis facilis
-                            tenetur quas magni officia commodi repellendus ullam.</p>
+
+                        <picture>
+                            <source srcset="
+                                ./images/mobile/imgportf3-mob-1x.jpg 1x, 
+                                ./images/mobile/imgportf3-mob-2x.jpg 2x" media="(max-width: 768px)">
+                            <source srcset="
+                                ./images/tablet/imgportf3-tablet-1x.jpg 1x, 
+                                ./images/tablet/imgportf3-tablet-2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="
+                                ./images/desktop/imgportf3.jpg 1x, 
+                                ./images/desktop/imgportf3-2x.jpg 2x" media="(min-width: 1200px)">
+                            <img class="portfolio-img" src="./images/mobile/imgportf3-mob-1x.jpg" alt="BankAApp"
+                                width="200">
+
+
+                            <p class="portfolio-top-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
+                                nisi
+                                eligendi, libero quos cum quas neque illo magnam? Harum temporibus sequi corporis
+                                facilis
+                                tenetur quas magni officia commodi repellendus ullam.</p>
                     </div>
                     <div class="list-items-text-cont">
-                        <h2 class="text-20-500">Meditaion App</h2>
+                        <h2 class="title-portf-text">Meditaion App</h2>
                         <p class="text-port">App</p>
                     </div>
                 </li>
                 <li class="portfolio-list-items">
                     <div class="portfolio-top-wrap">
-                        <img class="portfolio-img" src="./images/imgportf4.jpg" alt="TaxiService" width="360">
-                        <p class="portfolio-top-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et nisi
-                            eligendi, libero quos cum quas neque illo magnam? Harum temporibus sequi corporis facilis
-                            tenetur quas magni officia commodi repellendus ullam.</p>
+
+                        <picture>
+                            <source srcset="
+                                ./images/mobile/imgportf4-mob-1x.jpg 1x, 
+                                ./images/mobile/imgportf4-mob-2x.jpg 2x" media="(max-width: 768px)">
+                            <source srcset="
+                                ./images/tablet/imgportf4-tablet-1x.jpg 1x, 
+                                ./images/tablet/imgportf4-tablet-2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="
+                                ./images/desktop/imgportf4.jpg 1x, 
+                                ./images/desktop/imgportf4-2x.jpg 2x" media="(min-width: 1200px)">
+                            <img class="portfolio-img" src="./images/mobile/imgportf4-mob-1x.jpg" alt="BankAApp"
+                                width="200">
+
+
+                            <p class="portfolio-top-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
+                                nisi
+                                eligendi, libero quos cum quas neque illo magnam? Harum temporibus sequi corporis
+                                facilis
+                                tenetur quas magni officia commodi repellendus ullam.</p>
                     </div>
                     <div class="list-items-text-cont">
-                        <h2 class="text-20-500">Taxi Service</h2>
+                        <h2 class="title-portf-text">Taxi Service</h2>
                         <p class="text-port">Marketing</p>
                     </div>
                 </li>
                 <li class="portfolio-list-items">
                     <div class="portfolio-top-wrap">
-                        <img class="portfolio-img" src="./images/imgportf5.jpg" alt="ScreenIllustrations" width="360">
-                        <p class="portfolio-top-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et nisi
-                            eligendi, libero quos cum quas neque illo magnam? Harum temporibus sequi corporis facilis
-                            tenetur quas magni officia commodi repellendus ullam.</p>
+
+                        <picture>
+                            <source srcset="
+                                ./images/mobile/imgportf5-mob-1x.jpg 1x, 
+                                ./images/mobile/imgportf5-mob-2x.jpg 2x" media="(max-width: 768px)">
+                            <source srcset="
+                                ./images/tablet/imgportf5-tablet-1x.jpg 1x, 
+                                ./images/tablet/imgportf5-tablet-2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="
+                                ./images/desktop/imgportf5.jpg 1x, 
+                                ./images/desktop/imgportf5-2x.jpg 2x" media="(min-width: 1200px)">
+                            <img class="portfolio-img" src="./images/mobile/imgportf5-mob-1x.jpg" alt="BankAApp"
+                                width="200">
+
+
+                            <p class="portfolio-top-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
+                                nisi
+                                eligendi, libero quos cum quas neque illo magnam? Harum temporibus sequi corporis
+                                facilis
+                                tenetur quas magni officia commodi repellendus ullam.</p>
                     </div>
                     <div class="list-items-text-cont">
-                        <h2 class="text-20-500">Screen Illustrations</h2>
+                        <h2 class="title-portf-text">Screen Illustrations</h2>
                         <p class="text-port">Design</p>
                     </div>
                 </li>
                 <li class="portfolio-list-items">
                     <div class="portfolio-top-wrap">
-                        <img class="portfolio-img" src="./images/imgportf6.jpg" alt="OnlineCourses" width="360">
-                        <p class="portfolio-top-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et nisi
-                            eligendi, libero quos cum quas neque illo magnam? Harum temporibus sequi corporis facilis
-                            tenetur quas magni officia commodi repellendus ullam.</p>
+
+                        <picture>
+                            <source srcset="
+                                ./images/mobile/imgportf6-mob-1x.jpg 1x, 
+                                ./images/mobile/imgportf6-mob-2x.jpg 2x" media="(max-width: 768px)">
+                            <source srcset="
+                                ./images/tablet/imgportf6-tablet-1x.jpg 1x, 
+                                ./images/tablet/imgportf6-tablet-2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="
+                                ./images/desktop/imgportf6.jpg 1x, 
+                                ./images/desktop/imgportf6-2x.jpg 2x" media="(min-width: 1200px)">
+                            <img class="portfolio-img" src="./images/mobile/imgportf6-mob-1x.jpg" alt="BankAApp"
+                                width="200">
+
+                            <p class="portfolio-top-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
+                                nisi
+                                eligendi, libero quos cum quas neque illo magnam? Harum temporibus sequi corporis
+                                facilis
+                                tenetur quas magni officia commodi repellendus ullam.</p>
                     </div>
                     <div class="list-items-text-cont">
                         <h2 class="text-20-500">Online Courses</h2>
@@ -209,37 +299,75 @@
                 </li>
                 <li class="portfolio-list-items">
                     <div class="portfolio-top-wrap">
-                        <img class="portfolio-img" src="./images/imgportf7.jpg" alt="StoriesConcept" width="360">
-                        <p class="portfolio-top-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et nisi
-                            eligendi, libero quos cum quas neque illo magnam? Harum temporibus sequi corporis facilis
-                            tenetur quas magni officia commodi repellendus ullam.</p>
+                        <picture>
+                            <source srcset="
+                                ./images/mobile/imgportf7-mob-1x.jpg 1x, 
+                                ./images/mobile/imgportf7-mob-2x.jpg 2x" media="(max-width: 768px)">
+                            <source srcset="
+                                ./images/tablet/imgportf7-tablet-1x.jpg 1x, 
+                                ./images/tablet/imgportf7-tablet-2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="
+                                ./images/desktop/imgportf7.jpg 1x, 
+                                ./images/desktop/imgportf7-2x.jpg 2x" media="(min-width: 1200px)">
+                            <img class="portfolio-img" src="./images/mobile/imgportf7-mob-1x.jpg" alt="BankAApp"
+                                width="200">
+
+                            <p class="portfolio-top-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
+                                nisi
+                                eligendi, libero quos cum quas neque illo magnam? Harum temporibus sequi corporis
+                                facilis
+                                tenetur quas magni officia commodi repellendus ullam.</p>
                     </div>
                     <div class="list-items-text-cont">
-                        <h2 class="text-20-500">Instagram Stories Concept</h2>
+                        <h2 class="title-portf-text">Instagram Stories Concept</h2>
                         <p class="text-port">Design</p>
                     </div>
                 </li>
                 <li class="portfolio-list-items">
                     <div class="portfolio-top-wrap">
-                        <img class="portfolio-img" src="./images/imgportf8.jpg" alt="OrganicFood" width="360">
+                        
+                        <picture>
+                            <source srcset="
+                                ./images/mobile/imgportf8-mob-1x.jpg 1x, 
+                                ./images/mobile/imgportf8-mob-2x.jpg 2x" media="(max-width: 768px)">
+                            <source srcset="
+                                ./images/tablet/imgportf8-tablet-1x.jpg 1x, 
+                                ./images/tablet/imgportf8-tablet-2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="
+                                ./images/desktop/imgportf8.jpg 1x, 
+                                ./images/desktop/imgportf8-2x.jpg 2x" media="(min-width: 1200px)">
+                            <img class="portfolio-img" src="./images/mobile/imgportf8-mob-1x.jpg" alt="BankAApp" width="200">
+                        
+                        
                         <p class="portfolio-top-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et nisi
                             eligendi, libero quos cum quas neque illo magnam? Harum temporibus sequi corporis facilis
                             tenetur quas magni officia commodi repellendus ullam.</p>
                     </div>
                     <div class="list-items-text-cont">
-                        <h2 class="text-20-500">Organic Food</h2>
+                        <h2 class="title-portf-text">Organic Food</h2>
                         <p class="text-port">Web Site</p>
                     </div>
                 </li>
                 <li class="portfolio-list-items">
                     <div class="portfolio-top-wrap">
-                        <img class="portfolio-img" src="./images/imgportf9.jpg" alt="FreshCoffee" width="360">
+                        <picture>
+                            <source srcset="
+                                ./images/mobile/imgportf9-mob-1x.jpg 1x, 
+                                ./images/mobile/imgportf9-mob-2x.jpg 2x" media="(max-width: 768px)">
+                            <source srcset="
+                                ./images/tablet/imgportf9-tablet-1x.jpg 1x, 
+                                ./images/tablet/imgportf9-tablet-2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="
+                                ./images/desktop/imgportf9.jpg 1x, 
+                                ./images/desktop/imgportf9-2x.jpg 2x" media="(min-width: 1200px)">
+                            <img class="portfolio-img" src="./images/mobile/imgportf9-mob-1x.jpg" alt="BankAApp" width="200">
+                        
                         <p class="portfolio-top-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et nisi
                             eligendi, libero quos cum quas neque ill magnam Harum temporibus sequi corporis facilis
                             tenetur quas magni officia commodi rep ellendus ullam.</p>
                     </div>
                     <div class="list-items-text-cont">
-                        <h2 class="text-20-500">Fresh Coffee</h2>
+                        <h2 class="title-portf-text">Fresh Coffee</h2>
                         <p class="text-port">Web Site</p>
                     </div>
                 </li>
@@ -308,7 +436,7 @@
         </div>
     </footer>
 
-
+<script src="./js/menu.js"></script>
 </body>
 
 </html>
