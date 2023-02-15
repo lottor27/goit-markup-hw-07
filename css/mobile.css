@@ -5,6 +5,39 @@
 }
  /* width: calc((100% - 90px) / 4); */
 
+ /* Hedder */
+
+ .mob-menu-address-link-tel {
+    font-size: 36px;
+ }
+
+/* Hero */
+.hero{
+    background-image: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
+  ),
+  url(../images/mobile/Darkbg-tab.jpg);
+
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
+  ),
+  url(../images/mobile/Darkbg-tab-2x.
+jpg);
+  }
+}
+
+.hero-title{
+    font-size: 32px; 
+    width: 320px;
+}
 /* Feature */
 
 /* Team */
