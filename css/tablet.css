@@ -207,7 +207,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 24px;
-    width: 800px;
+    width: 768px;
     
     
 }
@@ -279,7 +279,7 @@ margin: 0;
   
 
 .footer-input{
-    width: auto;
+    width: 264px;
     height: 40px;
     margin: 0;
     

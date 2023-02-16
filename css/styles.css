@@ -82,6 +82,11 @@ img {
 /* Hedder */
 .hedder{
 border: none;
+  border: 1px solid #E7E9FC;
+box-shadow: 
+0px 2px 1px rgba(46, 47, 66, 0.08), 
+0px 1px 1px rgba(46, 47, 66, 0.16), 
+0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .navigation-cont{
   display: none;
@@ -93,11 +98,11 @@ border: none;
   padding-bottom: 24px;
   display: flex;
   justify-content: space-between;
-  border: 1px solid #E7E9FC;
-box-shadow: 
-0px 2px 1px rgba(46, 47, 66, 0.08), 
-0px 1px 1px rgba(46, 47, 66, 0.16), 
-0px 1px 6px rgba(46, 47, 66, 0.08);
+
+
+
+
+
   
   
   
@@ -406,8 +411,17 @@ fill: #f4f4fd;
   display: flex;
   flex-direction: column;
   gap: 76px;
+  
 }
 
+.feature-title{
+  font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+
+letter-spacing: 0.02em;
+color: #2E2F42;
+}
 .feature-text-box{
 
 }
